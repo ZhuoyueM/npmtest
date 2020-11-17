@@ -1,0 +1,38 @@
+{
+  "name": "test-example",
+  "version": "0.4.2",
+  "description": "A JSDoc plugin for generating test files by parsing @example",
+  "main": "source/index.js",
+  "engines": {
+    "node": "^5.12.0"
+  },
+  "scripts": {
+    "build": "jsdoc -c ./build/document.json  &&  reduce-blank ./docs/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TechQuery/test-example.git"
+  },
+  "keywords": [
+    "jsdoc",
+    "plugin",
+    "automation",
+    "testing"
+  ],
+  "author": "shiy007@qq.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TechQuery/test-example/issues"
+  },
+  "homepage": "https://techquery.github.io/test-example/",
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "js-beautify": "^1.7.5"
+  },
+  "devDependencies": {
+    "docdash": "^0.4.0",
+    "jsdoc": "^3.5.5",
+    "reduce-blank": "^0.2.0"
+  }
+}
